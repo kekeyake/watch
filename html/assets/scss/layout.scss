@@ -693,6 +693,10 @@
             li:last-child {
                 border-top: 1px solid rgba(161,172,183,.35);
             }
+            li.on a {
+                font-weight: 700;
+                color: #31383F;
+            }
         }
         .btn_logout {
             display: block;
@@ -941,6 +945,40 @@
                     font-weight: bold;
                     font-size: 14px;
                     color: #31383F;
+                }
+            }
+            .paging {
+                margin-top: 44px;
+            }
+            .tab_list {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: rgba(49, 56, 63, 0.75);
+                    text-align: right;
+                }
+                .btn_box {
+                    display: flex;
+                }
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 88px;
+                    height: 36px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    border: 1px solid rgba(161,172,183,.35);
+                    border-radius: 1px;
+                    &.on {
+                        background: #31383F;
+                        border: 1px solid #31383F;
+                        color:#fff;
+                    }
                 }
             }
         }
