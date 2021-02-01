@@ -164,6 +164,8 @@ body {
 .poppins {font-family: 'Poppins';}
 
 header {
+  max-width: 1920px;
+  margin:0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -204,6 +206,8 @@ header {
   }
 }
 footer {
+  max-width: 1920px;
+  margin:0 auto;
   padding:36px 40px;
   background: #212529;
   color:#fff;
@@ -368,4 +372,5 @@ footer {
     }
   }
 }
+
 /*# sourceMappingURL=common.css.map */
