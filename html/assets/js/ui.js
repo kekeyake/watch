@@ -18,6 +18,10 @@ $(function () {
             $('header').removeClass('sticky')
         }
     });
+
+    $('.faq_list button').on('click' ,function(){
+        $(this).toggleClass('on').next().slideToggle("fast");
+    });
     
 });
 

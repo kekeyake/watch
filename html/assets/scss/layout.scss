@@ -1,0 +1,109 @@
+@charset "UTF-8";
+.container {
+    padding-bottom: 100px;
+}
+.sub_top {
+    width:100%;
+    height:240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#fff;
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    p {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        
+    }
+}
+.faq {
+    .sub_top {
+        background: url(../img/common/sub_top_faq.png) no-repeat 0 0 / cover;
+    }
+    .inner {
+        width:1024px;
+        margin:0 auto;
+    }
+    .search_box {
+        margin: 36px auto;
+        width:420px;
+        height: 56px;
+        position: relative;
+        border-bottom: 1px solid rgba(49,56,63,.8);
+        input {
+            display: flex;
+            border: 0 solid #000;
+            width: 100%;
+            height: 100%;
+            &::placeholder {
+                color:#31383F;
+            }
+        }
+        button {
+            width: 36px;
+            height: 36px;
+            background: url(../img/common/ico_search.svg) no-repeat 50% 50%;
+            position: absolute;right:10px;top:50%;transform: translateY(-50%);
+        }
+    }
+    .keyword_list {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+        color:#31383F;
+        li {
+            margin:0 8px 8px 0;
+            ;
+            button {
+                padding:11px 16px;
+                background: #F5F7FA;
+                border: 1px solid #EDF0F3;
+                box-sizing: border-box;
+                border-radius: 2px
+            }
+        }
+    }
+    .faq_list {
+        margin: 40px 0;
+        font-size: 16px;
+        font-weight: 500;
+        color:#31383f;
+        button {
+            display: flex;
+            align-items: center;
+            width: 100%; 
+            height: 68px;
+            padding-left: 12px;
+            text-align: left;
+            outline: none;
+            background: url(../img/common/ico_arrow_down.svg) no-repeat  right 31px top 50%;
+            border-bottom: 1px solid rgba(161,172,183,.4);
+            &::before {
+                content: 'Q.';
+                display: inline-block;
+                margin-right: 12px;
+            }
+        }
+        button.on {
+            border-bottom: 1px solid rgba(161,172,183,1);
+        }
+        .answer {
+            display: none;
+            padding:40px 20px;
+            border-bottom: 1px solid rgba(161,172,183,.4);
+        }
+        .empty {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}

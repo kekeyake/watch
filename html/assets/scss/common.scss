@@ -267,4 +267,28 @@ footer {
   }
   .copy {margin-top: 40px;opacity: .9;}
 }
+
+.paging {
+  display: flex;
+  justify-content: center;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    margin:0 6px;
+    &:hover {
+      color:#fff;
+      background-color: #31383F;
+    }
+  }
+  .btn.prev {
+    background: url(../img/common/btn_paging_prev.svg) no-repeat 50% 50%;
+  }
+  .btn.next {
+    background: url(../img/common/btn_paging_next.svg) no-repeat 50% 50%;
+  }
+}
 /*# sourceMappingURL=common.css.map */

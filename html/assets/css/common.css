@@ -378,4 +378,42 @@ footer .copy {
   margin-top: 40px;
   opacity: .9;
 }
+
+.paging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paging a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  margin: 0 6px;
+}
+
+.paging a:hover {
+  color: #fff;
+  background-color: #31383F;
+}
+
+.paging .btn.prev {
+  background: url(../img/common/btn_paging_prev.svg) no-repeat 50% 50%;
+}
+
+.paging .btn.next {
+  background: url(../img/common/btn_paging_next.svg) no-repeat 50% 50%;
+}
 /*# sourceMappingURL=common.css.map */
