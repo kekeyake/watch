@@ -551,10 +551,21 @@
 }
 
 .login .login_input .auto_login input {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
   width: 20px;
   height: 20px;
-  border: 1px solid #AAB4C4;
-  border-radius: 0;
+  background: #FFF;
+  border: 1px solid #C2CCD5;
+  border-radius: 1px;
+}
+
+.login .login_input .auto_login input:checked {
+  background: url(../img/common/ico_check_on.svg) no-repeat 0 0/cover;
+  border: 0 solid #000;
 }
 
 .login .login_input .auto_login span {
@@ -619,10 +630,21 @@ p + label span {
 }
 
 .join_agree label input {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
   width: 20px;
   height: 20px;
-  border: 1px solid #AAB4C4;
-  border-radius: 0;
+  background: #FFF;
+  border: 1px solid #C2CCD5;
+  border-radius: 1px;
+}
+
+.join_agree label input:checked {
+  background: url(../img/common/ico_check_on.svg) no-repeat 0 0/cover;
+  border: 0 solid #000;
 }
 
 .join_agree label span {
@@ -724,10 +746,21 @@ p + label span {
 }
 
 .join_member > label input {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
   width: 20px;
   height: 20px;
-  border: 1px solid #AAB4C4;
-  border-radius: 0;
+  background: #FFF;
+  border: 1px solid #C2CCD5;
+  border-radius: 1px;
+}
+
+.join_member > label input:checked {
+  background: url(../img/common/ico_check_on.svg) no-repeat 0 0/cover;
+  border: 0 solid #000;
 }
 
 .join_member > label span {
@@ -1159,10 +1192,21 @@ p + label span {
 }
 
 .mypage_info .mypage_cont .info_editor label input {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
   width: 20px;
   height: 20px;
-  border: 1px solid #AAB4C4;
-  border-radius: 0;
+  background: #FFF;
+  border: 1px solid #C2CCD5;
+  border-radius: 1px;
+}
+
+.mypage_info .mypage_cont .info_editor label input:checked {
+  background: url(../img/common/ico_check_on.svg) no-repeat 0 0/cover;
+  border: 0 solid #000;
 }
 
 .mypage_info .mypage_cont .info_editor label span {
@@ -1382,5 +1426,63 @@ p + label span {
   background: #31383F;
   border: 1px solid #31383F;
   color: #fff;
+}
+
+.mypage_info .mypage_cont .check_wrap {
+  position: relative;
+}
+
+.mypage_info .mypage_cont .check_wrap .check_list {
+  margin-top: 10px;
+  border-top: 1px solid #31383F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mypage_info .mypage_cont .check_wrap .check_list label {
+  width: calc(100% / 5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 26px 0;
+}
+
+.mypage_info .mypage_cont .check_wrap .check_list label input {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #FFF;
+  border: 1px solid #C2CCD5;
+  border-radius: 1px;
+}
+
+.mypage_info .mypage_cont .check_wrap .check_list label input:checked {
+  background: url(../img/common/ico_check_on.svg) no-repeat 0 0/cover;
+  border: 0 solid #000;
+}
+
+.mypage_info .mypage_cont .check_wrap .check_list label span {
+  margin-left: 12px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.mypage_info .mypage_cont .check_wrap + .check_wrap {
+  margin-top: 60px;
+}
+
+.mypage_info .mypage_cont .check_wrap + .btn_wrap {
+  padding-top: 28px;
+  border-top: 1px solid #A1ACB7;
 }
 /*# sourceMappingURL=layout.css.map */
