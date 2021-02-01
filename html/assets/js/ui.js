@@ -22,6 +22,15 @@ $(function () {
     $('.faq_list button').on('click' ,function(){
         $(this).toggleClass('on').next().slideToggle("fast");
     });
+
+    $('.shop_cont .cont').hide();
+    $('.shop_cont .cont:first-child').show();
+    $('.tab_list a').on('click', function(){
+        var tg = $(this).attr('rel');
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.shop_cont .cont').hide();
+        $('.shop_cont .' + tg).show();
+    });
     
 });
 

@@ -147,6 +147,7 @@
     }
 }
 .notice_view {
+    width:1024px;
     margin-bottom: 56px;
     .view_top {
         margin-top: 64px;
@@ -166,12 +167,12 @@
                 font-size: 11px;
                 color:#fff;
                 background-color: #FF5D5D;
-                border-radius: 2px;;
+                border-radius: 2px;
             }
         }
         .date {
             margin: 16px 0;
-            font-size: 20px;color:#;
+            font-size: 20px;color:#31383F;
         }  
     }
     .text_box {
@@ -191,4 +192,138 @@
     margin:0 auto;
     padding:16px 30px;
     border: 1px solid rgba(49,56,63,.5);
+}
+
+.shop {
+    .sub_top {
+        background: url(../img/common/sub_top_shop.png) no-repeat 0 0 / cover;
+    }
+    .shop_info {
+        margin:68px 0 120px;
+        .info_top {
+            width:1000px;
+            margin:0 auto;
+            display: flex;
+            justify-content: space-between;
+            & > p {                
+                font-size: 28px;
+                line-height: 42px;
+            }
+            .intro_box {
+                width: 585px;
+                font-size: 16px;
+                line-height: 22px;
+                padding-bottom: 80px;
+                p {
+                    margin-bottom: 20px;
+                    &:last-child {
+                        margin:40px 0 0;
+                        span {
+                            display: block;
+                            color:#D1AD86;
+                            font-size: 18px;
+                            margin-bottom: 5px;
+                        }
+                        strong {
+                            color:#31383F;
+                        }
+                    }
+                }
+            }
+        }
+        .info_mid {
+            position: relative;
+            padding-top: 72px;
+            .in_cont {
+                width:1000px;
+                margin:0 auto;
+                h2 {
+                    text-align: center;
+                    font-size: 32px;
+                    font-weight: 600;
+                    & + p {
+                        text-align: center;   
+                        font-size: 18px;
+                        line-height: 29px;
+                    }
+                }
+                .tab_list {
+                    margin: 40px 0;
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        display: block;
+                        position: relative;
+                        margin:0 20px;
+                        padding-bottom: 8px;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color:rgba(52,58,64,.5);
+                        &.on {
+                            color:rgba(52,58,64,1);
+                            &:after {
+                                content: '';
+                                display: block;
+                                width: 100%;
+                                height: 4px;
+                                background-color: #D1AD86;
+                                position: absolute;
+                                left: 0;
+                                bottom:0;
+                            }
+                        }
+                    }
+                }
+                .address_box {
+                    width: 900px;
+                    margin:0 auto;
+                    padding:32px 36px;
+                    background-color: #fff;
+                    h3 {
+                        font-size: 28px;
+                        font-weight: 700;
+                    }
+                    dl {
+                        display: flex;
+                        flex-wrap: wrap;
+                        font-size: 16px;
+                        margin-top: 25px;
+                        div {
+                            width: 65%;
+                            display: flex;
+                            margin-bottom: 20px;
+                            &:nth-child(even) {
+                                width: 35%;
+                            }
+                        }
+                        dt {
+                            color:#343A40;
+                            font-weight: 700;
+                            width: 100px;
+                        }
+                        dd {
+                            color:#596066
+                        }
+                    
+                    }
+                }
+                .shop_map {
+                    width: 836px;
+                    margin:0 auto;
+                }
+
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:415px;
+                background-color: #EDF0F3;
+                z-index: -1;
+            }            
+        }
+    }
 }
