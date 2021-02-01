@@ -878,5 +878,71 @@
             }
             
         }
+
+        .list_wrap {
+            position: relative;
+            & + .list_wrap {
+                margin-top: 60px;
+            }
+            .btn_all {
+                position: absolute;
+                right:0;
+                top:7px;
+                font-weight: 500;
+                font-size: 12px;
+                color: #31383F;
+                text-decoration: underline;
+            }
+            .tbl {
+                margin-top: 10px;
+                border-top: 2px solid #31383F;
+                th {
+                    font-size: 13px;
+                    text-align: left;
+                    padding:18px 0 18px 10px;
+                    font-weight: 500;
+                    border-bottom: 1px solid #A1ACB7;
+                }
+                td {
+                    font-size: 13px;
+                    padding:20px 0 20px 10px;
+                    border-bottom: 1px solid #A1ACB7;
+                }
+                .state {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width:45px;
+                    height:26px;
+                    border: 1px solid #31383F;
+                    border-radius: 100px;
+                    font-weight: 500;
+                    font-size: 13px;
+                    &.cancel {
+                        opacity: .5;
+                    }
+                    &.complete {
+                        opacity: .8;
+                    }
+                }
+                .state_txt {
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: #596066;
+                }
+                .type {
+                    color:#A1ACB7;
+                }
+                .empty p {
+                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: #31383F;
+                }
+            }
+        }
     }
 }

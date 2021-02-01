@@ -1223,4 +1223,93 @@ p + label span {
           box-sizing: border-box;
   border-radius: 1px;
 }
+
+.mypage_info .mypage_cont .list_wrap {
+  position: relative;
+}
+
+.mypage_info .mypage_cont .list_wrap + .list_wrap {
+  margin-top: 60px;
+}
+
+.mypage_info .mypage_cont .list_wrap .btn_all {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #31383F;
+  text-decoration: underline;
+}
+
+.mypage_info .mypage_cont .list_wrap .tbl {
+  margin-top: 10px;
+  border-top: 2px solid #31383F;
+}
+
+.mypage_info .mypage_cont .list_wrap .tbl th {
+  font-size: 13px;
+  text-align: left;
+  padding: 18px 0 18px 10px;
+  font-weight: 500;
+  border-bottom: 1px solid #A1ACB7;
+}
+
+.mypage_info .mypage_cont .list_wrap .tbl td {
+  font-size: 13px;
+  padding: 20px 0 20px 10px;
+  border-bottom: 1px solid #A1ACB7;
+}
+
+.mypage_info .mypage_cont .list_wrap .tbl .state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  height: 26px;
+  border: 1px solid #31383F;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.mypage_info .mypage_cont .list_wrap .tbl .state.cancel {
+  opacity: .5;
+}
+
+.mypage_info .mypage_cont .list_wrap .tbl .state.complete {
+  opacity: .8;
+}
+
+.mypage_info .mypage_cont .list_wrap .tbl .state_txt {
+  font-weight: 500;
+  font-size: 13px;
+  color: #596066;
+}
+
+.mypage_info .mypage_cont .list_wrap .tbl .type {
+  color: #A1ACB7;
+}
+
+.mypage_info .mypage_cont .list_wrap .tbl .empty p {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #31383F;
+}
 /*# sourceMappingURL=layout.css.map */
