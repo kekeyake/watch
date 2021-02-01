@@ -277,7 +277,8 @@
                 .address_box {
                     width: 900px;
                     margin:0 auto;
-                    padding:32px 36px;
+                    transform: translateY(-35px);
+                    padding:32px 36px 0;
                     background-color: #fff;
                     h3 {
                         font-size: 28px;
