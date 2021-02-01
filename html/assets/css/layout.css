@@ -457,4 +457,143 @@
   background-color: #EDF0F3;
   z-index: -1;
 }
+
+.login .inner {
+  width: 340px;
+  margin: 80px auto;
+}
+
+.login h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  border-bottom: 2px solid #31383F;
+  border-radius: 1px;
+  padding-bottom: 8px;
+}
+
+.login .login_input {
+  margin-top: 30px;
+}
+
+.login .login_input input:not([type="checkbox"]) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #C2CCD5;
+  border-radius: 1px;
+  margin-bottom: 8px;
+  padding: 0 16px;
+}
+
+.login .login_input input:not([type="checkbox"]):first-child {
+  margin-top: 0;
+}
+
+.login .login_input input:not([type="checkbox"])::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #31383F;
+  opacity: .5;
+}
+
+.login .login_input input:not([type="checkbox"]):-ms-input-placeholder {
+  font-size: 16px;
+  color: #31383F;
+  opacity: .5;
+}
+
+.login .login_input input:not([type="checkbox"])::-ms-input-placeholder {
+  font-size: 16px;
+  color: #31383F;
+  opacity: .5;
+}
+
+.login .login_input input:not([type="checkbox"])::placeholder {
+  font-size: 16px;
+  color: #31383F;
+  opacity: .5;
+}
+
+.login .login_input .error_txt {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #FF5353;
+}
+
+.login .login_input .btn_login {
+  width: 100%;
+  height: 48px;
+  margin-top: 16px;
+  background-color: #31383F;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.login .login_input .auto_login {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.login .login_input .auto_login input {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #AAB4C4;
+  border-radius: 0;
+}
+
+.login .login_input .auto_login span {
+  margin-left: 8px;
+}
+
+.login .link_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(161, 172, 183, 0.35);
+  font-size: 14px;
+}
+
+.login .link_wrap a {
+  position: relative;
+}
+
+.login .link_wrap a:last-child {
+  padding-left: 16px;
+  margin-left: 16px;
+}
+
+.login .link_wrap a:last-child::after {
+  display: block;
+  content: '';
+  width: 1px;
+  height: 12px;
+  background-color: #A1ACB7;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: .35;
+}
 /*# sourceMappingURL=layout.css.map */
