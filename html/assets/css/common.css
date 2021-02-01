@@ -161,4 +161,147 @@ body {
   height: 100%;
   z-index: 100;
 }
+
+footer {
+  padding: 36px 40px;
+  background: #212529;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer nav .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer nav .link li {
+  padding-right: 20px;
+  margin-right: 20px;
+  position: relative;
+  opacity: .9;
+}
+
+footer nav .link li:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: #979797;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+footer nav .link li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+footer nav .link li:last-child:after {
+  display: none;
+}
+
+footer nav .sns_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 248px;
+}
+
+footer address {
+  margin-top: 20px;
+}
+
+footer address p {
+  margin-bottom: 12px;
+}
+
+footer address p:last-child {
+  margin-bottom: 0;
+}
+
+footer address p span {
+  opacity: .9;
+  margin-right: 12px;
+}
+
+footer address p span:first-child {
+  opacity: .75;
+}
+
+footer address p span:nth-child(2) {
+  padding-right: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+footer address p span:nth-child(2):after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: #979797;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+footer address p a {
+  text-decoration: underline;
+  opacity: .9;
+}
+
+footer address p:last-child span:nth-child(even) {
+  padding-right: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+footer address p:last-child span:nth-child(even):after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: #979797;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+footer address p:last-child span:last-child:after {
+  content: '';
+  display: none;
+}
+
+footer .copy {
+  margin-top: 40px;
+  opacity: .9;
+}
 /*# sourceMappingURL=common.css.map */
