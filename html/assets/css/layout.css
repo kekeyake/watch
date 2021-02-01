@@ -789,4 +789,102 @@ p + label span {
   text-align: center;
   font-weight: 500;
 }
+
+.mypage .password_check {
+  margin-top: 120px;
+  text-align: center;
+  color: #31383F;
+}
+
+.mypage .password_check h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.mypage .password_check .stit {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.mypage .password_check .input_box {
+  width: 340px;
+  margin: 32px auto 0;
+}
+
+.mypage .password_check .input_box p {
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.mypage .password_check .input_box input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6px;
+  padding: 0 16px;
+  height: 48px;
+  border: 1px solid #C2CCD5;
+  border-radius: 1px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.mypage .password_check .input_box input::-webkit-input-placeholder {
+  color: rgba(49, 56, 63, 0.5);
+}
+
+.mypage .password_check .input_box input:-ms-input-placeholder {
+  color: rgba(49, 56, 63, 0.5);
+}
+
+.mypage .password_check .input_box input::-ms-input-placeholder {
+  color: rgba(49, 56, 63, 0.5);
+}
+
+.mypage .password_check .input_box input::placeholder {
+  color: rgba(49, 56, 63, 0.5);
+}
+
+.mypage .password_check .input_box .error_txt {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #FF5353;
+}
+
+.mypage .password_check .btn_wrap {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mypage .password_check .btn_wrap .ok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  width: 120px;
+  height: 48px;
+  background: #31383F;
+  border-radius: 1px;
+}
 /*# sourceMappingURL=layout.css.map */
