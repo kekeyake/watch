@@ -447,6 +447,7 @@ footer .copy {
 .auto_regist input {
   width: 160px;
   margin-right: 10px;
+  border: 1px solid #C2CCD5;
 }
 
 .auto_regist button {

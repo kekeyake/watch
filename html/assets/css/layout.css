@@ -659,4 +659,134 @@ p + label span {
   margin: 20px auto 0;
   text-align: center;
 }
+
+.join_member {
+  padding-top: 20px;
+}
+
+.join_member input + .t1 {
+  margin-top: 12px;
+}
+
+.join_member .t1 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 26px;
+  color: #343A40;
+}
+
+.join_member > div {
+  margin-bottom: 20px;
+}
+
+.join_member > div input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+  height: 48px;
+  border: 1px solid #C2CCD5;
+  border-radius: 1px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.join_member > div input + input {
+  margin-top: 8px;
+}
+
+.join_member > div input::-webkit-input-placeholder {
+  color: rgba(49, 56, 63, 0.5);
+}
+
+.join_member > div input:-ms-input-placeholder {
+  color: rgba(49, 56, 63, 0.5);
+}
+
+.join_member > div input::-ms-input-placeholder {
+  color: rgba(49, 56, 63, 0.5);
+}
+
+.join_member > div input::placeholder {
+  color: rgba(49, 56, 63, 0.5);
+}
+
+.join_member > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.join_member > label input {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #AAB4C4;
+  border-radius: 0;
+}
+
+.join_member > label span {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.join_member .txt {
+  margin-top: 32px;
+  font-size: 12px;
+  color: #343a40;
+  font-weight: 500;
+}
+
+.join_member .auto_regist {
+  padding-bottom: 30px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(161, 172, 183, 0.35);
+}
+
+.join_member .auto_regist input {
+  width: 150px;
+}
+
+.join_member .auto_regist button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.join_member .error_txt {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #FF5353;
+}
+
+.join_member .btn_join {
+  margin-top: 28px;
+  width: 100%;
+  height: 48px;
+  background-color: #31383F;
+  border-radius: 1px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.join_member .btn_home {
+  display: block;
+  font-size: 14px;
+  margin: 20px auto 0;
+  text-align: center;
+  font-weight: 500;
+}
 /*# sourceMappingURL=layout.css.map */

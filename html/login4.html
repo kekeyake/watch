@@ -40,30 +40,37 @@
     <div class="container login">
         <section class="inner">
             <h2>회원정보 입력</h2>
-            <div class="join_agree">
-                <p> 
-                    회원가입약관 및 개인정보처리방침의 내용에 동의하셔야 <br>회원가입 하실 수 있습니다.
+            <div class="join_member">
+                <div>
+                    <p class="t1">아이디</p>
+                    <input type="text" placeholder="아이디(3자 이상, 영문/숫자만)">
+                    <p class="t1">비빌번호</p>
+                    <input type="password" placeholder="비밀번호">
+                    <input type="password" placeholder="비밀번호 확인">
+                    <p class="t1">개인정보</p>
+                    <input type="text" placeholder="이름">
+                    <input type="text" placeholder="이메일">
+                    <input type="text" placeholder="휴대폰 번호">
+                    <input type="text" placeholder="닉네임 (한글 2자, 영문 4자 이상)">
+                </div>
+                <label>
+                    <input type="checkbox">
+                    <span>정보 메일을 받겠습니다.</span>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <span>휴대폰 문자메세지를 받겠습니다.</span>
+                </label>
+                <p class="txt">자동등록방지 숫자를 순서대로 입력하세요.</p>
+                <div class="auto_regist">
+                    <div class="img_box"><img src="assets/img/common/img_captha.png" alt=""></div>
+                    <input type="text">
+                    <button class="btn_sound"><img src="assets/img/common/ico_sound.svg" alt=""></button>
+                    <button class="btn_refresh"><img src="assets/img/common/ico_refresh.svg" alt=""></button>
+                </div>
+                <p class="error_txt">
+                    아이디를 입력해주세요.
                 </p>
-                <label>
-                    <input type="checkbox">
-                    <span>회원가입 약관에 모두 동의합니다.</span>
-                </label>
-                <label>
-                    <input type="checkbox">
-                    <span>회원가입약관</span>
-                </label>
-                <div class="scroll_box">
-                    제1조(목적)  본 약관은 하이시간 회원이 ㈜시간(이하 "회사")에서 제공하는 하이시간 서비스를 이용함에 있어 하이시간 회원과 회사과 이용자의 권리의무 및 책임사항을 규정함을 목적으로 합니다. <br><br>
-                    ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다」
-                </div>
-                <label>
-                    <input type="checkbox">
-                    <span>개인정보처리방침안내</span>
-                </label>
-                <div class="scroll_box">
-                    제1조(목적)  본 약관은 하이시간 회원이 ㈜시간(이하 "회사")에서 제공하는 하이시간 서비스를 이용함에 있어 하이시간 회원과 회사과 이용자의 권리의무 및 책임사항을 규정함을 목적으로 합니다. <br><br>
-                    ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다」
-                </div>
                 <button class="btn_join">회원가입</button>
                 <a href="#a" class="btn_home">홈으로 돌아가기</a>
             </div>
