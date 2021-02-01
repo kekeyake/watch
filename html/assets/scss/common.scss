@@ -294,6 +294,26 @@ footer {
     background: url(../img/common/btn_paging_next.svg) no-repeat 50% 50%;
   }
 }
+.auto_regist {
+  display: flex;
+  margin-top: 5px;
+  .img_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98px;height: 48px;
+    border: 1px solid rgba(52,58,64,1);
+    margin-right: 8px;
+  }
+  input {
+    width: 160px;
+    margin-right: 10px;
+  }
+  button {
+    width: 48px;
+    height: 48px;
+  }
+}
 .popup {
   width:440px;
   padding:28px;
@@ -328,26 +348,6 @@ footer {
   input + p {
     font-size: 12px;
     margin-top: 24px;
-  }
-  .auto_regist {
-    display: flex;
-    margin-top: 5px;
-    .img_box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 98px;height: 48px;
-      border: 1px solid rgba(52,58,64,1);
-      margin-right: 8px;
-    }
-    input {
-      width: 160px;
-      margin-right: 10px;
-    }
-    button {
-      width: 48px;
-      height: 48px;
-    }
   }
   .btn_wrap {
     margin-top: 80px;

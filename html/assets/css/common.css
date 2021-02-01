@@ -421,6 +421,39 @@ footer .copy {
   background: url(../img/common/btn_paging_next.svg) no-repeat 50% 50%;
 }
 
+.auto_regist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.auto_regist .img_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 98px;
+  height: 48px;
+  border: 1px solid #343a40;
+  margin-right: 8px;
+}
+
+.auto_regist input {
+  width: 160px;
+  margin-right: 10px;
+}
+
+.auto_regist button {
+  width: 48px;
+  height: 48px;
+}
+
 .popup {
   width: 440px;
   padding: 28px;
@@ -467,39 +500,6 @@ footer .copy {
 .popup input + p {
   font-size: 12px;
   margin-top: 24px;
-}
-
-.popup .auto_regist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 5px;
-}
-
-.popup .auto_regist .img_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 98px;
-  height: 48px;
-  border: 1px solid #343a40;
-  margin-right: 8px;
-}
-
-.popup .auto_regist input {
-  width: 160px;
-  margin-right: 10px;
-}
-
-.popup .auto_regist button {
-  width: 48px;
-  height: 48px;
 }
 
 .popup .btn_wrap {
