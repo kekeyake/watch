@@ -933,6 +933,12 @@
                     font-weight: 500;
                     font-size: 13px;
                     color: #596066;
+                    &.t1 {
+                        color:#AAB4C4;
+                    }
+                    &.stay {
+                        color:#3AAD68;
+                    }
                 }
                 .type {
                     color:#A1ACB7;
@@ -945,6 +951,9 @@
                     font-weight: bold;
                     font-size: 14px;
                     color: #31383F;
+                }
+                .price {
+                    color:#FF5353;
                 }
             }
             .paging {

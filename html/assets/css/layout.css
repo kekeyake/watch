@@ -1298,6 +1298,14 @@ p + label span {
   color: #596066;
 }
 
+.mypage_info .mypage_cont .list_wrap .tbl .state_txt.t1 {
+  color: #AAB4C4;
+}
+
+.mypage_info .mypage_cont .list_wrap .tbl .state_txt.stay {
+  color: #3AAD68;
+}
+
 .mypage_info .mypage_cont .list_wrap .tbl .type {
   color: #A1ACB7;
 }
@@ -1316,6 +1324,10 @@ p + label span {
   font-weight: bold;
   font-size: 14px;
   color: #31383F;
+}
+
+.mypage_info .mypage_cont .list_wrap .tbl .price {
+  color: #FF5353;
 }
 
 .mypage_info .mypage_cont .list_wrap .paging {
