@@ -21,6 +21,34 @@
         
     }
 }
+.info {
+    text-align: center;
+    padding-top: 160px;
+    .t1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 28px;
+    }
+    .t2 {
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 12px;
+    }
+    .t3 {
+        font-size: 14px;
+        font-weight: 700;
+        color:#BE9162;
+        margin-top: 48px;
+    }
+    .t4 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 12px;
+    }
+    .logo {
+        margin-top: 112px;
+    }
+}
 .faq {
     .sub_top {
         background: url(../img/common/sub_top_faq.png) no-repeat 0 0 / cover;
