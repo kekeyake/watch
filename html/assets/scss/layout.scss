@@ -1090,3 +1090,87 @@
         }
     }
 }
+.main {
+    .chart_slider {
+        background: #2B3035;
+        height: 100px;
+        ul {
+            width: 1240px;
+            height: 100px;
+            position: absolute;
+            left:50%;
+            transform: translateX(-50%);
+            overflow:hidden;
+            li {
+                position: absolute;
+            }
+        }
+        .price_box {
+            width: 280px;
+            height: 100px;
+            padding:18px 0 0 16px;
+            .t1 {
+                font-size: 12px;
+                font-weight: 500;
+                color:#BE9162;
+            }
+            .t2 {
+                font-size: 16px;
+                color:#fff;;
+                opacity: .9;
+                margin-top: 5px;
+            }
+            .graph_box {
+                position: absolute;
+                right: 18px;
+                bottom: 12px;
+                width: 122px;
+                height: 54px;
+                
+            }
+        }
+    }
+    .main_top {
+        max-width: 1240px;
+        margin:0 auto;
+        position: relative;
+        background: #F7F9FB;
+    }
+    .main_cont  {
+        height: 560px;
+        padding:64px 0 0 100px;
+        
+        .t1 {
+            font-size: 20px;
+            font-weight: 500;
+            color:#31383F;
+            opacity: .6;
+        }
+        .t2 {
+            font-size: 36px;
+            font-weight: 700;
+            color:#31383f;
+            line-height: 52px;
+            margin-top: 8px;
+        }
+        .link_shop {
+            background: #2B3035 url(../img/common/ico_arrow_right2.svg) no-repeat right 26px top 50%;
+            font-size: 16px;
+            font-family: 'Poppins';
+            color:#fff;
+            width: 184px;
+            height: 52px;
+            display: flex;
+            padding-left: 24px;
+            align-items: center;
+            margin-top: 28px;
+        }
+        .big {
+            position: absolute;
+            right:0;
+            top:0;
+        }
+    }
+    
+    
+}
