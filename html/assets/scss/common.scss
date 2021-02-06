@@ -119,6 +119,30 @@ a {
   }
 }
 
+input[type="checkbox"] {
+    outline: none;
+    appearance: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/common/ico_checkbox_off.svg) no-repeat 0 0 / cover;
+    &:checked {
+        background: url(../img/common/ico_checkbox_on.svg) no-repeat 0 0 / cover;
+        border: 0 solid #000;
+    }
+}
+input[type="radio"] {
+    outline: none;
+    appearance: none;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/common/ico_radio_off.svg) no-repeat 0 0 / cover;
+    &:checked {
+        background: url(../img/common/ico_radio_on.svg) no-repeat 0 0 / cover;
+        border: 0 solid #000;
+    }
+}
 .clear:after {
   content: '';
   display: block;

@@ -779,24 +779,6 @@ p + label span {
   margin-bottom: 12px;
 }
 
-.join_member > label input {
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: #FFF;
-  border: 1px solid #C2CCD5;
-  border-radius: 1px;
-}
-
-.join_member > label input:checked {
-  background: url(../img/common/ico_check_on.svg) no-repeat 0 0/cover;
-  border: 0 solid #000;
-}
-
 .join_member > label span {
   margin-left: 8px;
   font-size: 14px;
@@ -1973,6 +1955,58 @@ p + label span {
   margin-top: 26px;
   font-weight: bold;
   font-size: 14px;
+  line-height: 16px;
+}
+
+.main_pop {
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 420px;
+  background: #FFF;
+  border: 1px solid rgba(194, 204, 213, 0.2);
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.main_pop .pop_cont {
+  width: 100%;
+  height: 464px;
+}
+
+.main_pop .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border-top: 1px solid #F5F7FA;
+}
+
+.main_pop .option label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.main_pop .option label input {
+  margin-right: 8px;
+}
+
+.main_pop .option button {
+  width: 72px;
+  height: 36px;
+  border: 1px solid rgba(49, 56, 63, 0.5);
+  font-weight: 500;
+  font-size: 13px;
   line-height: 16px;
 }
 /*# sourceMappingURL=layout.css.map */
