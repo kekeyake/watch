@@ -1479,3 +1479,51 @@
         }
     }
 }
+.warranty {
+    .sub_top {
+        height: 260px;
+        background: url(../img/common/sub_top_warranty.png) no-repeat 0 0 / cover;
+    }
+    .inner {
+        width:1040px;
+        margin:0 auto;
+        padding-top: 80px;
+    }
+    .cont {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 72px;
+        &:first-child {
+            margin-top: 0;
+        }
+        h2 {
+            width: 200px;
+            padding-top: 15px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color:#BE9162;
+            border-top: 2px solid #BE9162;
+        }
+        h2 + div {
+            width: 810px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(49, 56, 63, .25);
+            color: #31383F;
+        }
+        .t1 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .t2 {
+            margin-top: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .info_box {
+            margin-top: 25px;
+        }
+    }
+}
