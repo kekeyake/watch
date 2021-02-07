@@ -79,6 +79,11 @@ $(function () {
     $('.select_wrap button').on('click',function(){
         $(this).toggleClass('on');
     });
+    $('.buy_detail .tab_list li').on('click',function(){
+        var idx = $(this).index();
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.buy_detail .watch_list li').removeClass('on').eq(idx).addClass('on');
+    });
     
 });
 
