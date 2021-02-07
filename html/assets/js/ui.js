@@ -76,6 +76,9 @@ $(function () {
     }, function(){
         slidePLay();
     });
+    $('.select_wrap button').on('click',function(){
+        $(this).toggleClass('on');
+    });
     
 });
 
