@@ -84,6 +84,9 @@ $(function () {
         $(this).addClass('on').siblings().removeClass('on');
         $('.buy_detail .watch_list li').removeClass('on').eq(idx).addClass('on');
     });
+    $('.select_model li').on('click',function(){
+        $(this).toggleClass('on').siblings().removeClass('on');
+    });
     
 });
 

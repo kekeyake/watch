@@ -110,6 +110,14 @@ header, footer, section, article, aside, nav, hgroup, details, menu, figure, fig
   overflow: hidden;
 }
 
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  width: 100%;
+  overflow: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
