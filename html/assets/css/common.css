@@ -626,6 +626,11 @@ footer .copy {
   color: #31383F;
 }
 
+.alert p.t1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .alert .btn_wrap {
   position: absolute;
   right: 24px;

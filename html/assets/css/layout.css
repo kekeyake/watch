@@ -3391,6 +3391,7 @@ p + label span {
   font-size: 20px;
   padding-left: 18px;
   margin-bottom: 12px;
+  line-height: 24px;
 }
 
 .sale .model_info .info_box h3::after {
@@ -3994,6 +3995,73 @@ p + label span {
   background: url(../img/common/ico_search.svg) no-repeat 8px 55%;
 }
 
+.sale > .complete {
+  padding: 120px 0 140px;
+  text-align: center;
+}
+
+.sale > .complete .t1 {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sale > .complete .cont {
+  width: 440px;
+  margin: 24px auto 0;
+  padding: 34px 50px 27px;
+  background: #F7FBFF;
+  border: 0.75px solid rgba(92, 92, 92, 0.0075);
+  border-radius: 2px;
+}
+
+.sale > .complete .cont .t2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 29px;
+}
+
+.sale > .complete .cont dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.sale > .complete .cont dl dt {
+  width: 95px;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: .75;
+}
+
+.sale > .complete .cont dl dd {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.sale > .complete .btn_home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 134px;
+  height: 52px;
+  margin: 40px auto 0;
+  background: #31383F;
+  border-radius: 1px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+
 .popup.model_search {
   width: 640px;
   text-align: center;
@@ -4142,5 +4210,1039 @@ p + label span {
 .popup.model_search .cont li .txt_box .modle_name {
   font-weight: 500;
   font-size: 16px;
+}
+
+.auction .most_viewed {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 52px 40px 76px;
+  background: #EDF0F3;
+}
+
+.auction .most_viewed h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auction .most_viewed .swiper-container {
+  padding-bottom: 36px;
+}
+
+.auction .most_viewed .swiper-pagination {
+  bottom: 0;
+}
+
+.auction .most_viewed .swiper-pagination-bullet {
+  width: 20px;
+  height: 2px;
+  background: #31383F;
+  opacity: .25;
+  border-radius: 0;
+}
+
+.auction .most_viewed .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.auction .most_viewed .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FFF;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.auction .most_viewed .swiper-slide .product_info {
+  width: calc(100% - 180px);
+  padding: 20px 24px;
+  position: relative;
+}
+
+.auction .most_viewed .swiper-slide .product_info .comment {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  line-height: 20px;
+  width: 162px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.auction .most_viewed .swiper-slide .product_info .watch_name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: .6;
+}
+
+.auction .most_viewed .swiper-slide .product_info .price {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.auction .most_viewed .swiper-slide .product_info .end {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FF5353;
+  text-decoration: underline;
+}
+
+.auction .most_viewed .swiper-slide .product_info .join_num {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.auction .most_viewed .swiper-slide .product_info .fluctuations {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 24px;
+  border-radius: 2px;
+  background: #A1ACB7;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.auction .most_viewed .swiper-slide .product_info .fluctuations.up {
+  background: #309D5C;
+}
+
+.auction .most_viewed .swiper-slide .product_info .fluctuations.up span {
+  padding-left: 12px;
+  background: url(../img/common/ico_polygon_up.svg) no-repeat 0 50%;
+}
+
+.auction .most_viewed .swiper-slide .product_info .fluctuations.down {
+  background: #D74C4C;
+}
+
+.auction .most_viewed .swiper-slide .product_info .fluctuations.down span {
+  padding-left: 12px;
+  background: url(../img/common/ico_polygon_down.svg) no-repeat 0 50%;
+}
+
+.auction .most_viewed .swiper-slide .product_info .option {
+  margin-top: 10px;
+}
+
+.auction .most_viewed .swiper-slide .product_info .option img {
+  margin-right: 8px;
+}
+
+.auction .most_viewed .swiper-slide .product_info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16px;
+}
+
+.auction .most_viewed .swiper-slide .product_info ul li {
+  position: relative;
+  line-height: 1.2;
+}
+
+.auction .most_viewed .swiper-slide .product_info ul li:nth-child(2) {
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.auction .most_viewed .swiper-slide .product_info ul li:nth-child(2)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 27px;
+  background-color: rgba(161, 172, 183, 0.5);
+}
+
+.auction .most_viewed .swiper-slide .product_info ul li:nth-child(2)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 27px;
+  background-color: rgba(161, 172, 183, 0.5);
+}
+
+.auction .most_viewed .swiper-slide .product_info ul li span {
+  display: block;
+  font-weight: 500;
+  font-size: 11px;
+  opacity: .5;
+}
+
+.auction .most_viewed .swiper-slide .product_info ul li b {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.auction .most_viewed .swiper-slide .sale {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 94px;
+  height: 30px;
+  background: #BE9162;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
+  color: #fff;
+}
+
+.auction .product_list {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 40px;
+  position: relative;
+}
+
+.auction .product_list .filter_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EDF0F3;
+}
+
+.auction .product_list .filter_wrap > button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  width: 103px;
+  height: 40px;
+  background: #F5F7FA;
+  border: 1px solid #EDF0F3;
+  border-radius: 1px;
+}
+
+.auction .product_list .filter_wrap .select_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.auction .product_list .filter_wrap .select_wrap button {
+  background: url(../img/common/ico_arrow_down.svg) no-repeat right 14px top 50%;
+  height: 40px;
+  margin-right: 10px;
+  padding: 0 40px 0 14px;
+  border: 1px solid rgba(161, 172, 183, 0.35);
+  border-radius: 1px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.auction .product_list .filter_wrap .select_wrap button.on {
+  color: #fff;
+  border-color: #31383F;
+  background: #31383F url(../img/common/ico_arrow_down_on.svg) no-repeat right 14px top 50%;
+}
+
+.auction .product_list .sort_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 28px 0 32px;
+}
+
+.auction .product_list .sort_wrap span {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 40px;
+}
+
+.auction .product_list .sort_wrap span b {
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.auction .product_list .sort_wrap select {
+  height: 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 14px;
+  padding-right: 40px;
+  border: 1px solid rgba(161, 172, 183, 0.35);
+  border-radius: 1px;
+  background: url(../img/common/ico_select.svg) no-repeat 100% 50%;
+}
+
+.auction .product_list .filter_box {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auction .product_list .filter_box .filter_btn_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.auction .product_list .filter_box .filter_btn_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 12px;
+  margin-right: 8px;
+  height: 32px;
+  background: #484D5A;
+  border-radius: 1px;
+}
+
+.auction .product_list .filter_box .filter_btn_list li span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  margin-right: 16px;
+}
+
+.auction .product_list .filter_box .filter_btn_list li button {
+  width: 14px;
+  height: 14px;
+}
+
+.auction .product_list .filter_box .filter_btn_list li button img {
+  vertical-align: top;
+}
+
+.auction .product_list .filter_box .reset_btn {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.auction .product_list .pro_list_empty {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.auction .product_list .pro_list_empty .t1 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 28px;
+}
+
+.auction .product_list .pro_list_empty .t2 {
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.auction .product_list .pro_list_empty .t2 b {
+  color: #BE9162;
+}
+
+.auction .product_list .pro_list_empty .btn_watch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 196px;
+  height: 52px;
+  margin: 40px auto 0;
+  background: #2B3035;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+
+.auction .product_list .pro_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 1px solid #EDF0F3;
+}
+
+.auction .product_list .pro_list > li {
+  position: relative;
+  width: calc(100% / 4);
+  padding: 24px 0 28px;
+  border: 1px solid #EDF0F3;
+  border-top: 0 solid #000;
+  border-right: 0 solid #000;
+  text-align: center;
+}
+
+.auction .product_list .pro_list > li:nth-child(4n) {
+  border-right: 1px solid #EDF0F3;
+}
+
+.auction .product_list .pro_list > li > img {
+  width: 100%;
+}
+
+.auction .product_list .pro_list > li .sale {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 94px;
+  height: 30px;
+  background: #BE9162;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
+  color: #fff;
+}
+
+.auction .product_list .pro_list > li .option {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.auction .product_list .pro_list > li .option img {
+  margin-left: 10px;
+}
+
+.auction .product_list .pro_list > li .watch_name {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: .6;
+}
+
+.auction .product_list .pro_list > li .price {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.auction .product_list .pro_list > li .end {
+  margin-top: 6px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FF5353;
+}
+
+.auction .product_list .pro_list > li .join_num {
+  margin: 10px 0 22px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.auction .product_list .pro_list > li .fluctuations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 24px;
+  margin: 6px auto 0;
+  border-radius: 2px;
+  background: #A1ACB7;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.auction .product_list .pro_list > li .fluctuations.up {
+  background: #309D5C;
+}
+
+.auction .product_list .pro_list > li .fluctuations.up span {
+  padding-left: 12px;
+  background: url(../img/common/ico_polygon_up.svg) no-repeat 0 50%;
+}
+
+.auction .product_list .pro_list > li .fluctuations.down {
+  background: #D74C4C;
+}
+
+.auction .product_list .pro_list > li .fluctuations.down span {
+  padding-left: 12px;
+  background: url(../img/common/ico_polygon_down.svg) no-repeat 0 50%;
+}
+
+.auction .product_list .pro_list > li .comment {
+  line-height: 20px;
+  width: 126px;
+  margin: 15px auto 0;
+  opacity: .8;
+  font-weight: 500;
+  font-size: 14px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.auction .product_list .pro_list > li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16px;
+}
+
+.auction .product_list .pro_list > li ul li {
+  position: relative;
+  padding: 0 16px;
+  line-height: 1.2;
+}
+
+.auction .product_list .pro_list > li ul li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 27px;
+  background-color: rgba(161, 172, 183, 0.5);
+}
+
+.auction .product_list .pro_list > li ul li:last-child::after {
+  display: none;
+}
+
+.auction .product_list .pro_list > li ul li span {
+  display: block;
+  font-weight: 500;
+  font-size: 11px;
+  opacity: .5;
+}
+
+.auction .product_list .pro_list > li ul li b {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.auction .product_list .paging {
+  margin-top: 40px;
+}
+
+.auction .product_list .recently_view button {
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  width: 133px;
+  height: 44px;
+  font-weight: 500;
+  font-size: 14px;
+  background: #212529;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+}
+
+.auction_detail {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 60px 40px 140px;
+}
+
+.auction_detail .top_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.auction_detail .top_cont .watch_list {
+  width: 596px;
+  height: 606px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(161, 172, 183, 0.35);
+}
+
+.auction_detail .top_cont .watch_list li {
+  display: none;
+}
+
+.auction_detail .top_cont .watch_list li.on {
+  display: block;
+}
+
+.auction_detail .top_cont .watch_info {
+  position: relative;
+  width: 564px;
+  border-top: 1px solid #31383F;
+  border-bottom: 1px solid rgba(161, 172, 183, 0.35);
+  padding: 16px 0 33px;
+}
+
+.auction_detail .top_cont .watch_info .bland {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  opacity: .6;
+}
+
+.auction_detail .top_cont .watch_info .option {
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.auction_detail .top_cont .watch_info .option img {
+  margin-left: 10px;
+}
+
+.auction_detail .top_cont .watch_info .watch_name {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.auction_detail .top_cont .watch_info .t1 {
+  margin: 10px 0 16px;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(161, 172, 183, 0.35);
+}
+
+.auction_detail .top_cont .watch_info .t2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: .75;
+}
+
+.auction_detail .top_cont .watch_info .t2 span {
+  font-weight: 700;
+  color: #BE9162;
+}
+
+.auction_detail .top_cont .watch_info .end {
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FF5353;
+  text-decoration: underline;
+}
+
+.auction_detail .top_cont .watch_info .join_num {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.auction_detail .top_cont .watch_info .fluctuations {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 32px;
+  border-radius: 2px;
+  background: #A1ACB7;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.auction_detail .top_cont .watch_info .fluctuations.up {
+  background: #309D5C;
+}
+
+.auction_detail .top_cont .watch_info .fluctuations.up span {
+  padding-left: 12px;
+  background: url(../img/common/ico_polygon_up.svg) no-repeat 0 50%;
+}
+
+.auction_detail .top_cont .watch_info .fluctuations.down {
+  background: #D74C4C;
+}
+
+.auction_detail .top_cont .watch_info .fluctuations.down span {
+  padding-left: 12px;
+  background: url(../img/common/ico_polygon_down.svg) no-repeat 0 50%;
+}
+
+.auction_detail .top_cont .watch_info .bidding {
+  margin-top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  width: 100%;
+  height: 64px;
+  padding: 0 16px;
+  font-weight: 500;
+  font-size: 36px;
+  background: #FFFFFF;
+  border: 1px solid #C2CCD5;
+  border-radius: 1px;
+}
+
+.auction_detail .top_cont .watch_info .sale {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 36px;
+  background: #BE9162;
+  font-weight: 500;
+  font-size: 13px;
+  color: #fff;
+}
+
+.auction_detail .top_cont .watch_info .t4 {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.auction_detail .top_cont .watch_info .store_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.auction_detail .top_cont .watch_info .store_list li {
+  margin-right: 32px;
+}
+
+.auction_detail .top_cont .watch_info .store_list li label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auction_detail .top_cont .watch_info .store_list li span {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.auction_detail .top_cont .watch_info .buy_bidding {
+  margin-top: 10px;
+  width: 100%;
+  height: 64px;
+  background: #31383F;
+  border-radius: 1px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.auction_detail .top_cont .watch_info .alert_txt {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FF5353;
+}
+
+.auction_detail .top_cont .watch_info .t5 {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.auction_detail .top_cont .watch_info .t5 a {
+  margin-left: auto;
+  font-weight: bold;
+  color: #BE9162;
+}
+
+.auction_detail .tab_list {
+  margin-top: 16px;
+  width: 596px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.auction_detail .tab_list li {
+  width: 140px;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(161, 172, 183, 0.35);
+  background-color: #fff;
+}
+
+.auction_detail .tab_list li.on {
+  border: 1px solid #31383F;
+}
+
+.auction_detail .graph_box {
+  margin-top: 36px;
+  position: relative;
+  width: 100%;
+  height: 160px;
+  background: #F5F7FA;
+  border: 1px solid #EDF0F3;
+  border-radius: 1px;
+}
+
+.auction_detail .graph_box p {
+  position: absolute;
+  left: 28px;
+  top: 24px;
+  font-weight: bold;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.auction_detail .graph_box .graph {
+  position: absolute;
+  left: 36px;
+  top: 37px;
+  width: 1128px;
+  height: 81px;
+}
+
+.auction_detail h3 {
+  margin: 80px 0 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.auction_detail .tbl {
+  width: 100%;
+  border-top: 1px solid #31383F;
+  border-radius: 1px;
+}
+
+.auction_detail .tbl th, .auction_detail .tbl td {
+  border-bottom: 1px solid rgba(161, 172, 183, 0.35);
+  padding: 22px 20px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.auction_detail .tbl th {
+  font-weight: bold;
+  background: #F5F7FA;
+}
+
+.popup.grade_application .txt_box {
+  margin-top: 12px;
+  padding: 16px;
+  background: #F7FBFF;
+  border: 0.75px solid rgba(92, 92, 92, 0.0075);
+  border-radius: 2px;
+}
+
+.popup.grade_application .txt_box .t1 {
+  font-weight: 500;
+  font-size: 13px;
+  opacity: .75;
+}
+
+.popup.grade_application .txt_box .t2 {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.popup.grade_application .cont {
+  border-bottom: 1px solid #EDF0F3;
+  padding: 20px 0 46px;
+}
+
+.popup.grade_application .cont h3 {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.popup.grade_application .cont h3 span {
+  color: #FF5353;
+}
+
+.popup.grade_application .cont input[type="text"] {
+  width: 100%;
+  margin-top: 6px;
+  font-weight: 500;
+  color: rgba(49, 56, 63, 0.5);
+}
+
+.popup.grade_application .cont input[type="text"] + h3 {
+  margin-top: 16px;
+}
+
+.popup.grade_application .cont2 {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.popup.grade_application .cont2 > div {
+  margin-top: 19px;
+}
+
+.popup.grade_application .cont2 dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.popup.grade_application .cont2 dl dt {
+  width: 95px;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: .6;
+}
+
+.popup.grade_application .cont2 dl dd {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.popup.grade_application .btn_wrap {
+  margin-top: 32px;
+}
+
+.popup.grade_application .btn_wrap .full {
+  margin-left: 0;
 }
 /*# sourceMappingURL=layout.css.map */

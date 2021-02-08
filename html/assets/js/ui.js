@@ -84,6 +84,11 @@ $(function () {
         $(this).addClass('on').siblings().removeClass('on');
         $('.buy_detail .watch_list li').removeClass('on').eq(idx).addClass('on');
     });
+    $('.auction_detail .tab_list li').on('click', function () {
+        var idx = $(this).index();
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.auction_detail .watch_list li').removeClass('on').eq(idx).addClass('on');
+    });
     $('.select_model li').on('click',function(){
         $(this).toggleClass('on').siblings().removeClass('on');
     });
