@@ -87,7 +87,9 @@ $(function () {
     $('.select_model li').on('click',function(){
         $(this).toggleClass('on').siblings().removeClass('on');
     });
-    
+    $('.btn_tooltip').on('click',function(){
+        $('.tooltip').toggleClass('on');
+    });
 });
 
 function chkBrowserSize() {

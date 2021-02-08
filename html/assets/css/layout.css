@@ -3165,6 +3165,10 @@ p + label span {
   margin-top: 40px;
 }
 
+.sale {
+  overflow: hidden;
+}
+
 .sale .sub_top {
   height: 360px;
   background: url(../img/common/sub_top_sale.png) no-repeat 0 0/cover;
@@ -3373,7 +3377,7 @@ p + label span {
 .sale .model_info .info_box ::after {
   position: absolute;
   left: 0;
-  bottom: -100px;
+  bottom: -200px;
   content: '';
   display: block;
   width: 100%;
@@ -3398,7 +3402,7 @@ p + label span {
   background: #31383F;
   position: absolute;
   left: 0;
-  top: 13px;
+  top: 7px;
 }
 
 .sale .model_info .info_box .model_box {
@@ -3427,6 +3431,7 @@ p + label span {
 
 .sale .model_info .info_box .model_box .info_list dd {
   font-weight: bold;
+  margin-top: 10px;
   font-size: 20px;
 }
 
@@ -3505,11 +3510,12 @@ p + label span {
 }
 
 .sale .model_info .step_box input + h4,
-.sale .model_info .step_box select + h4 {
+.sale .model_info .step_box select + h4,
+.sale .model_info .step_box .attach_file + h4 {
   margin-top: 20px;
 }
 
-.sale .model_info .step_box input {
+.sale .model_info .step_box input:not([type="checkbox"]) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3527,24 +3533,24 @@ p + label span {
   font-size: 14px;
 }
 
-.sale .model_info .step_box input:disabled {
+.sale .model_info .step_box input:not([type="checkbox"]):disabled {
   background: #F8F9FA;
   color: rgba(49, 56, 63, 0.5);
 }
 
-.sale .model_info .step_box input::-webkit-input-placeholder {
+.sale .model_info .step_box input:not([type="checkbox"])::-webkit-input-placeholder {
   color: rgba(49, 56, 63, 0.5);
 }
 
-.sale .model_info .step_box input:-ms-input-placeholder {
+.sale .model_info .step_box input:not([type="checkbox"]):-ms-input-placeholder {
   color: rgba(49, 56, 63, 0.5);
 }
 
-.sale .model_info .step_box input::-ms-input-placeholder {
+.sale .model_info .step_box input:not([type="checkbox"])::-ms-input-placeholder {
   color: rgba(49, 56, 63, 0.5);
 }
 
-.sale .model_info .step_box input::placeholder {
+.sale .model_info .step_box input:not([type="checkbox"])::placeholder {
   color: rgba(49, 56, 63, 0.5);
 }
 
@@ -3605,6 +3611,342 @@ p + label span {
 
 .sale .model_info .step_box textarea::placeholder {
   color: rgba(49, 56, 63, 0.5);
+}
+
+.sale .model_info .step_box .check_sale {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.sale .model_info .step_box .check_sale h4 {
+  width: 122px;
+}
+
+.sale .model_info .step_box .check_sale ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sale .model_info .step_box .check_sale li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sale .model_info .step_box .check_sale li:first-child {
+  margin-right: 60px;
+}
+
+.sale .model_info .step_box .check_sale li label {
+  font-weight: 500;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sale .model_info .step_box .check_sale li label input {
+  margin-right: 8px;
+}
+
+.sale .model_info .step_box .check_sale .btn_tooltip {
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+  background: url(../img/common/ico_tooltip.svg) no-repeat 0 0/cover;
+}
+
+.sale .model_info .step_box .check_sale .tooltip {
+  position: absolute;
+  display: none;
+  top: 30px;
+  right: 0;
+  width: 358px;
+  height: 134px;
+  padding: 18px 16px;
+  background: #FFFFFF;
+  border: 1px solid #EDF0F3;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.sale .model_info .step_box .check_sale .tooltip.on {
+  display: block;
+}
+
+.sale .model_info .step_box .check_sale .tooltip .t1 {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.sale .model_info .step_box .check_sale .tooltip .t2 {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.sale .model_info .step_box .check_sale .tooltip a {
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.sale .model_info .step_box .check_store {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.sale .model_info .step_box .check_store h4 {
+  width: 95px;
+}
+
+.sale .model_info .step_box .check_store ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sale .model_info .step_box .check_store li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 24px;
+}
+
+.sale .model_info .step_box .check_store li:last-child {
+  margin-right: 0;
+}
+
+.sale .model_info .step_box .check_store li label {
+  font-weight: 500;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sale .model_info .step_box .check_store li label input {
+  margin-right: 8px;
+}
+
+.sale .model_info .step_box .visit_schedule {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.sale .model_info .step_box .visit_schedule h4 {
+  width: 95px;
+  padding-top: 20px;
+}
+
+.sale .model_info .step_box .visit_schedule > div {
+  width: calc(100% - 95px);
+}
+
+.sale .model_info .step_box .visit_schedule .calendar_wrap {
+  margin-top: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sale .model_info .step_box .visit_schedule .calendar_wrap > div {
+  width: 206px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #C2CCD5;
+  border-radius: 1px;
+  position: relative;
+}
+
+.sale .model_info .step_box .visit_schedule .calendar_wrap > div input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  width: 173px;
+  height: 46px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+  border: 0 solid #000;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: .5;
+}
+
+.sale .model_info .step_box .visit_schedule .calendar_wrap > div button {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 18px;
+  height: 20px;
+}
+
+.sale .model_info .step_box .visit_schedule .calendar_wrap > div button img {
+  vertical-align: top;
+}
+
+.sale .model_info .step_box .visit_schedule .calendar_wrap select {
+  margin-top: 0;
+  width: 124px;
+  padding-left: 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-right: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(49, 56, 63, 0.5);
+  background: url(../img/common/ico_drop_down.svg) no-repeat right 12px top 50%;
+}
+
+.sale .model_info .step_box .visit_schedule .agree_box {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 28px;
+}
+
+.sale .model_info .step_box .visit_schedule .agree_box input {
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.sale .model_info .step_box .visit_schedule .agree_box span {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.sale .model_info .step_box .visit_schedule .agree_box span a {
+  text-decoration: underline;
+}
+
+.sale .model_info .step_box .visit_schedule .agree_box p {
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(49, 56, 63, 0.75);
+}
+
+.sale .model_info .step_box .attach_file {
+  position: relative;
+}
+
+.sale .model_info .step_box .attach_file input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sale .model_info .step_box .attach_file label {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #31383F;
+  cursor: pointer;
+}
+
+.sale .model_info .step_box .attach_file span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8px;
+  font-weight: 500;
+  padding: 0 16px;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #C2CCD5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+  color: rgba(49, 56, 63, 0.5);
+}
+
+.sale .model_info .step_box .attach_file .attach_file_list {
+  width: 100%;
+  overflow-x: auto;
+  margin: 12px 0 30px;
+}
+
+.sale .model_info .step_box .attach_file .attach_file_list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.sale .model_info .step_box .attach_file .attach_file_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 8px;
+  width: 84px;
+  height: 84px;
+  position: relative;
+  border: 1px solid #A1ACB7;
+}
+
+.sale .model_info .step_box .attach_file .attach_file_list li:last-child {
+  margin-right: 0;
+}
+
+.sale .model_info .step_box .attach_file .attach_file_list li button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background: #212529 url(../img/common/ico_x.svg) no-repeat 50% 50%/6px;
 }
 
 .sale .model_info .step_box .alert_txt {
