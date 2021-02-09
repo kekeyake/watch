@@ -33,6 +33,7 @@ img, fieldset {
 input, select, textarea {
   vertical-align: middle;
   resize: none;
+  outline: none;
 }
 
 input[type=text], input[type=password], input[type=submit], input[type=search], input[type=email], input[type=tel], textarea {
@@ -57,6 +58,7 @@ button {
   border: 0 none;
   background: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 hr {
