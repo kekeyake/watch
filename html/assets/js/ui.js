@@ -95,6 +95,9 @@ $(function () {
     $('.btn_tooltip').on('click',function(){
         $('.tooltip').toggleClass('on');
     });
+    $('.recently_view > button').on('click',function(){
+        $('.recently_viewed_products').toggleClass('on');
+    });
 });
 
 function chkBrowserSize() {
