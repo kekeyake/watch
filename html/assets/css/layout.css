@@ -2,6 +2,10 @@
   padding-bottom: 100px;
 }
 
+.container.main {
+  padding-bottom: 0;
+}
+
 .sub_top {
   width: 100%;
   height: 240px;
@@ -33,8 +37,30 @@
 }
 
 .info {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  padding-top: 160px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 110px 0;
+}
+
+.info .top_img_box {
+  width: 400px;
+}
+
+.info .top_img_box img {
+  margin-left: 40px;
 }
 
 .info .t1 {
@@ -1555,6 +1581,28 @@ p + label span {
   background: #F7F9FB;
 }
 
+.main .main_top::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 560px;
+  top: 0;
+  left: -100%;
+  position: absolute;
+  background: #F7F9FB;
+}
+
+.main .main_top::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 560px;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #F7F9FB;
+}
+
 .main .main_cont {
   height: 560px;
   padding: 64px 0 0 100px;
@@ -1606,7 +1654,7 @@ p + label span {
 
 .main .main_cont .small {
   position: absolute;
-  left: 386px;
+  left: 414px;
   bottom: 42px;
 }
 
@@ -1816,6 +1864,18 @@ p + label span {
   z-index: -1;
 }
 
+.main .main_info::after {
+  content: '';
+  position: absolute;
+  left: -250%;
+  top: 0;
+  display: block;
+  width: 500%;
+  height: 360px;
+  background-color: #F7F9FB;
+  z-index: -1;
+}
+
 .main .main_info .tit {
   margin-left: 100px;
   font-weight: 500;
@@ -1895,7 +1955,7 @@ p + label span {
 }
 
 .main .main_info .info_list {
-  margin: 108px auto 0;
+  margin: 120px auto 140px;
   padding: 0 108px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2073,6 +2133,10 @@ p + label span {
   margin-top: 25px;
 }
 
+.warranty .cont:last-child {
+  margin-bottom: 20px;
+}
+
 .hpi .sub_top {
   height: 260px;
   background: url(../img/common/sub_top_hpi.png) no-repeat 0 0/cover;
@@ -2081,7 +2145,7 @@ p + label span {
 .hpi .inner {
   width: 920px;
   margin: 0 auto;
-  padding-top: 102px;
+  padding: 102px 0 20px;
   text-align: center;
   color: #31383F;
 }
@@ -2165,9 +2229,21 @@ p + label span {
 
 .buy .most_viewed {
   width: 1280px;
+  position: relative;
   margin: 0 auto;
-  padding: 52px 40px 76px;
+  padding: 52px 40px 40px;
   background: #EDF0F3;
+}
+
+.buy .most_viewed::before {
+  content: '';
+  display: block;
+  width: 500%;
+  height: 416px;
+  background: #EDF0F3;
+  position: absolute;
+  left: -250%;
+  top: 0;
 }
 
 .buy .most_viewed h2 {
@@ -2176,6 +2252,7 @@ p + label span {
   line-height: 28px;
   text-align: center;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .buy .most_viewed .swiper-container {

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .container {
     padding-bottom: 100px;
+    &.main {padding-bottom: 0;}
 }
 .sub_top {
     width:100%;
@@ -22,8 +23,19 @@
     }
 }
 .info {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding-top: 160px;
+    align-items: center;
+    justify-content: center;
+    padding: 110px 0;
+    .top_img_box {
+        width: 400px;
+        & img {
+            margin-left: 40px;
+        }
+    }
     .t1 {
         font-size: 20px;
         font-weight: 700;
@@ -1121,6 +1133,26 @@
         margin:0 auto;
         position: relative;
         background: #F7F9FB;
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 560px;
+            top:0;
+            left:-100%;
+            position: absolute;
+            background: #F7F9FB;
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 560px;
+            top:0;
+            right:-100%;
+            position: absolute;
+            background: #F7F9FB;
+        }
     }
     .main_cont  {
         height: 560px;
@@ -1163,7 +1195,7 @@
         }
         .small {
             position: absolute;
-            left:386px;
+            left:414px;
             bottom:42px;
         }
         &.swiper-slide-active {
@@ -1328,6 +1360,17 @@
             background-color:#F7F9FB;
             z-index: -1;
         }
+        &::after {
+            content: '';
+            position: absolute;
+            left: -250%;
+            top:0;
+            display: block;
+            width: 500%;
+            height: 360px;
+            background-color:#F7F9FB;
+            z-index: -1;
+        }
         .tit {
             margin-left: 100px;
             font-weight: 500;
@@ -1389,7 +1432,7 @@
             }
         }
         .info_list {
-            margin: 108px auto 0;
+            margin: 120px auto 140px;
             padding:0 108px;
             display: flex;
             justify-content: space-between;
@@ -1528,6 +1571,9 @@
         .info_box {
             margin-top: 25px;
         }
+        &:last-child {
+            margin-bottom: 20px;
+        }
     }
 }
 .hpi {
@@ -1538,7 +1584,7 @@
     .inner {
         width:920px;
         margin:0 auto;
-        padding-top: 102px;
+        padding: 102px 0 20px;
         text-align: center;
         color: #31383F;
     }
@@ -1601,15 +1647,28 @@
 .buy {
     .most_viewed {
         width: 1280px;
+        position: relative;
         margin:0 auto;
-        padding:52px 40px 76px;
+        padding:52px 40px 40px;
         background: #EDF0F3;
+        &::before {
+            content: '';
+            display: block;
+            width: 500%;
+            height: 416px;
+            background: #EDF0F3;
+            position: absolute;
+            left: -250%;
+            top:0;
+        }
         h2 {
             font-weight: bold;
             font-size: 24px;
             line-height: 28px;
             text-align: center;
             margin-bottom: 20px;
+            position: relative;
+
         }
         .swiper-container {
             padding-bottom: 36px;
