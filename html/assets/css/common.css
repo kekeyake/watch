@@ -256,7 +256,7 @@ header:after {
 }
 
 header h1 img {
-  width: 116px;
+  width: 124px;
 }
 
 header .gnb {
@@ -586,7 +586,8 @@ footer .copy {
 }
 
 .popup .btn_wrap button {
-  width: 90px;
+  min-width: 90px;
+  padding: 0 30px;
   height: 48px;
   border: 1px solid #31383f;
   font-size: 16px;

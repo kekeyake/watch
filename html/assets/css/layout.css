@@ -252,6 +252,10 @@
   border-bottom: 1px solid rgba(49, 56, 63, 0.8);
 }
 
+.notice .notice_list li.tit:hover {
+  background: #fff;
+}
+
 .notice .notice_list li.tit span:last-child {
   width: 85px;
 }
@@ -322,6 +326,10 @@
   padding: 40px 20px;
   border-top: 1px solid rgba(49, 56, 63, 0.8);
   border-bottom: 1px solid rgba(161, 172, 183, 0.4);
+}
+
+.notice_view + .btn_wrap .btn_list {
+  font-size: 14px;
 }
 
 .btn_wrap {
@@ -866,7 +874,20 @@ p + label span {
 }
 
 .mypage .password_check {
-  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(100vh - 412px);
   text-align: center;
   color: #31383F;
 }
@@ -997,7 +1018,7 @@ p + label span {
   display: block;
   width: 54px;
   height: 54px;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   background: url(../img/common/ico_profile.svg) no-repeat 0 0/cover;
 }
 
@@ -1006,6 +1027,7 @@ p + label span {
 }
 
 .mypage_info .profile_nav ul li:nth-child(1) {
+  margin-bottom: 8px;
   border-bottom: 1px solid rgba(161, 172, 183, 0.35);
   padding-bottom: 24px;
   line-height: 1.2;
@@ -1029,10 +1051,14 @@ p + label span {
   padding: 15px 0;
   font-weight: 500;
   font-size: 16px;
+  height: 50px;
   color: rgba(49, 56, 63, 0.75);
 }
 
 .mypage_info .profile_nav ul li:last-child {
+  margin-top: 8px;
+  padding-top: 23px !important;
+  height: 58px !important;
   border-top: 1px solid rgba(161, 172, 183, 0.35);
 }
 
@@ -1044,8 +1070,9 @@ p + label span {
 .mypage_info .profile_nav .btn_logout {
   display: block;
   width: 100%;
-  margin: 24px 0 0;
+  margin: 24px 0 15px;
   padding: 11px 0;
+  height: 48px;
   border: 1px solid #31383F;
   border-radius: 1px;
   font-weight: 500;
@@ -1085,6 +1112,9 @@ p + label span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 4px;
   width: 120px;
   height: 48px;
@@ -1244,6 +1274,7 @@ p + label span {
   background: #FFF;
   border: 1px solid #C2CCD5;
   border-radius: 1px;
+  padding: 0;
 }
 
 .mypage_info .mypage_cont .info_editor label input:checked {
@@ -1291,6 +1322,7 @@ p + label span {
   border-radius: 1px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 0;
 }
 
 .mypage_info .mypage_cont .info_editor .filebox .upload-name {
@@ -2076,7 +2108,7 @@ p + label span {
 
 .warranty .sub_top {
   height: 260px;
-  background: url(../img/common/sub_top_warranty.png) no-repeat 0 0/cover;
+  background: url(../img/common/sub_top_warranty.png) no-repeat 50% 50%/cover;
 }
 
 .warranty .inner {
@@ -3561,6 +3593,7 @@ p + label span {
 
 .sale .model_info .step_box h4 span {
   color: #FF5353;
+  margin-left: 1px;
 }
 
 .sale .model_info .step_box input + h4,
@@ -3672,6 +3705,9 @@ p + label span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
 }
 
@@ -3765,6 +3801,9 @@ p + label span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
 }
 
@@ -3895,7 +3934,7 @@ p + label span {
 .sale .model_info .step_box .visit_schedule .agree_box input {
   position: absolute;
   left: 0;
-  top: 7px;
+  top: 2px;
 }
 
 .sale .model_info .step_box .visit_schedule .agree_box span {
@@ -3908,13 +3947,17 @@ p + label span {
 }
 
 .sale .model_info .step_box .visit_schedule .agree_box p {
+  margin-top: 7px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 12px;
+  line-height: 14px;
   color: rgba(49, 56, 63, 0.75);
 }
 
 .sale .model_info .step_box .attach_file {
   position: relative;
+  margin-bottom: 40px;
 }
 
 .sale .model_info .step_box .attach_file input[type="file"] {
@@ -4045,6 +4088,7 @@ p + label span {
   font-weight: 500;
   font-size: 15px;
   padding-left: 36px;
+  border: 0 solid #000;
   background: url(../img/common/ico_search.svg) no-repeat 8px 55%;
 }
 
@@ -4261,6 +4305,7 @@ p + label span {
 }
 
 .popup.model_search .cont li .txt_box .modle_name {
+  margin-top: 6px;
   font-weight: 500;
   font-size: 16px;
 }
@@ -4268,7 +4313,7 @@ p + label span {
 .auction .most_viewed {
   width: 1280px;
   margin: 0 auto;
-  padding: 52px 40px 76px;
+  padding: 52px 40px 56px;
   background: #EDF0F3;
 }
 
@@ -4356,16 +4401,17 @@ p + label span {
 
 .auction .most_viewed .swiper-slide .product_info .fluctuations {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 0 7px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 36px;
+  min-width: 36px;
   height: 24px;
   border-radius: 2px;
   background: #A1ACB7;
