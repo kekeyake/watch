@@ -100,13 +100,17 @@
         color:#31383F;
         li {
             margin:0 8px 8px 0;
-            ;
             button {
                 padding:11px 16px;
                 background: #F5F7FA;
                 border: 1px solid #EDF0F3;
                 box-sizing: border-box;
-                border-radius: 2px
+                border-radius: 2px;
+                &.on {
+                    background: #31383F;
+                    border: 1px solid #31383F;
+                    color:#fff;
+                }
             }
         }
     }
@@ -1819,20 +1823,41 @@
                 border-radius: 1px;
             }
             .select_wrap {
+                overflow: hidden;
+                width: 100%;
+                height: 45px;
                 display: flex;
+                flex-wrap: wrap;
+                border-bottom: 1px solid rgba(161, 172, 183, .35);
+                border-right: 1px solid rgba(161, 172, 183, .35);
+                &.filter_open {
+                    height: 90px;
+                    button.filter {
+                        color:#fff;
+                        background: #31383F url(../img/common/ico_filter_on.svg) no-repeat 44px 50%;
+                    }
+                }
                 button {
-                    background: url(../img/common/ico_arrow_down.svg) no-repeat right 14px top 50%;
-                    height: 40px;
-                    margin-right: 10px;
-                    padding:0 40px 0 14px;
+                    width:calc(100% / 7);
+                    height: 44px;
+                    padding:0;
                     border: 1px solid rgba(161, 172, 183, .35);
+                    border-bottom: 0 solid #000;
+                    border-right: 0 solid #000;
                     border-radius: 1px;
                     font-weight: 500;
                     font-size: 14px;
                     &.on {
                         color:#fff;
                         border-color: #31383F;
-                        background:#31383F url(../img/common/ico_arrow_down_on.svg) no-repeat right 14px top 50%;
+                        background:#31383F;
+                    }
+                    &.filter {
+                        padding-left: 25px;
+                        background: #F5F7FA url(../img/common/ico_filter.svg) no-repeat 44px 50%;
+                        &.on {
+                            background: #31383F url(../img/common/ico_filter_on.svg) no-repeat 44px 50%;
+                        }
                     }
                 }
             }
@@ -1859,6 +1884,9 @@
                 border: 1px solid rgba(161, 172, 183, .35);
                 border-radius: 1px;
                 background: url(../img/common/ico_select.svg) no-repeat 100% 50%;
+                &.filter_select {
+                    background: url(../img/common/ico_arrow_up.svg) no-repeat right 13px top 50%;
+                }
             }
         }
         .filter_box {
@@ -3415,6 +3443,9 @@
                 border: 1px solid rgba(161, 172, 183, .35);
                 border-radius: 1px;
                 background: url(../img/common/ico_select.svg) no-repeat 100% 50%;
+                & .filter_select {
+                    background: url(../img/common/ico_arrow_up.svg) no-repeat 100% 50%;
+                }
             }
         }
         .filter_box {
@@ -4120,6 +4151,56 @@
                     opacity: 1;
                 }
             }
+        }
+    }
+}
+.filter_detail_wrap {
+    border: 1px solid rgba(145, 145, 145, 0.58);
+    &.brand {
+        width: 910px;
+    }
+    .btn_wrap {
+        display: flex;
+        justify-content: center;
+        padding:20px;
+        border: 1px solid rgba(180, 190, 203, 0.5);
+        button {
+            font-weight: 500;
+            font-size: 14px;
+            height: 40px;
+            color:#31383F;
+            padding:0 20px;
+            border: 1px solid #31383F;
+            border-radius: 1px;
+            &.btn_ok {
+                background-color: #31383F;
+                color:#fff;
+                margin-left: 8px;
+            }
+        }
+        &.right {
+            padding:20px 24px;
+            justify-content: flex-end;
+        }
+    }
+
+    .search_box {
+        display: flex;
+        padding:24px;
+        align-items: center;
+        strong {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            margin-right: 60px;
+            color: #31383F;
+        }
+        span {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: #112211;
+            opacity: 0.75;
         }
     }
 }

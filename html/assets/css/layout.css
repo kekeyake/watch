@@ -170,6 +170,12 @@
   border-radius: 2px;
 }
 
+.faq .keyword_list li button.on {
+  background: #31383F;
+  border: 1px solid #31383F;
+  color: #fff;
+}
+
 .faq .faq_list {
   margin: 40px 0;
   font-size: 16px;
@@ -2461,17 +2467,34 @@ p + label span {
 }
 
 .buy .product_list .filter_wrap .select_wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid rgba(161, 172, 183, 0.35);
+  border-right: 1px solid rgba(161, 172, 183, 0.35);
+}
+
+.buy .product_list .filter_wrap .select_wrap.filter_open {
+  height: 90px;
+}
+
+.buy .product_list .filter_wrap .select_wrap.filter_open button.filter {
+  color: #fff;
+  background: #31383F url(../img/common/ico_filter_on.svg) no-repeat 44px 50%;
 }
 
 .buy .product_list .filter_wrap .select_wrap button {
-  background: url(../img/common/ico_arrow_down.svg) no-repeat right 14px top 50%;
-  height: 40px;
-  margin-right: 10px;
-  padding: 0 40px 0 14px;
+  width: calc(100% / 7);
+  height: 44px;
+  padding: 0;
   border: 1px solid rgba(161, 172, 183, 0.35);
+  border-bottom: 0 solid #000;
+  border-right: 0 solid #000;
   border-radius: 1px;
   font-weight: 500;
   font-size: 14px;
@@ -2480,7 +2503,16 @@ p + label span {
 .buy .product_list .filter_wrap .select_wrap button.on {
   color: #fff;
   border-color: #31383F;
-  background: #31383F url(../img/common/ico_arrow_down_on.svg) no-repeat right 14px top 50%;
+  background: #31383F;
+}
+
+.buy .product_list .filter_wrap .select_wrap button.filter {
+  padding-left: 25px;
+  background: #F5F7FA url(../img/common/ico_filter.svg) no-repeat 44px 50%;
+}
+
+.buy .product_list .filter_wrap .select_wrap button.filter.on {
+  background: #31383F url(../img/common/ico_filter_on.svg) no-repeat 44px 50%;
 }
 
 .buy .product_list .sort_wrap {
@@ -2519,6 +2551,10 @@ p + label span {
   border: 1px solid rgba(161, 172, 183, 0.35);
   border-radius: 1px;
   background: url(../img/common/ico_select.svg) no-repeat 100% 50%;
+}
+
+.buy .product_list .sort_wrap select.filter_select {
+  background: url(../img/common/ico_arrow_up.svg) no-repeat right 13px top 50%;
 }
 
 .buy .product_list .filter_box {
@@ -4644,6 +4680,10 @@ p + label span {
   background: url(../img/common/ico_select.svg) no-repeat 100% 50%;
 }
 
+.auction .product_list .sort_wrap select .filter_select {
+  background: url(../img/common/ico_arrow_up.svg) no-repeat 100% 50%;
+}
+
 .auction .product_list .filter_box {
   margin-top: 12px;
   display: -webkit-box;
@@ -5597,5 +5637,73 @@ p + label span {
 
 .recently_view .recently_viewed_products .paging_wrap button:hover {
   opacity: 1;
+}
+
+.filter_detail_wrap {
+  border: 1px solid rgba(145, 145, 145, 0.58);
+}
+
+.filter_detail_wrap.brand {
+  width: 910px;
+}
+
+.filter_detail_wrap .btn_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  border: 1px solid rgba(180, 190, 203, 0.5);
+}
+
+.filter_detail_wrap .btn_wrap button {
+  font-weight: 500;
+  font-size: 14px;
+  height: 40px;
+  color: #31383F;
+  padding: 0 20px;
+  border: 1px solid #31383F;
+  border-radius: 1px;
+}
+
+.filter_detail_wrap .btn_wrap button.btn_ok {
+  background-color: #31383F;
+  color: #fff;
+  margin-left: 8px;
+}
+
+.filter_detail_wrap .btn_wrap.right {
+  padding: 20px 24px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.filter_detail_wrap .search_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter_detail_wrap .search_box strong {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 60px;
+  color: #31383F;
+}
+
+.filter_detail_wrap .search_box span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #112211;
+  opacity: 0.75;
 }
 /*# sourceMappingURL=layout.css.map */

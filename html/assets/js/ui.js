@@ -78,11 +78,24 @@ $(function () {
     });
     $('.select_wrap button').on('click',function(){
         $(this).toggleClass('on');
+        $(this).siblings('button').not('filter').removeClass('on');
+        
+        var filterXY = $(this).offset();
+        console.log(filterXY);
+        
     });
+    $('.keyword_list button').on('click',function(){
+        $(this).toggleClass('on').parent('li').siblings('li').find('button').removeClass('on');
+    });
+    
     $('.buy_detail .tab_list li').on('click',function(){
         var idx = $(this).index();
         $(this).addClass('on').siblings().removeClass('on');
         $('.buy_detail .watch_list li').removeClass('on').eq(idx).addClass('on');
+    });
+    $('.select_wrap .filter').on('click',function(){
+        $(this).removeClass('on');
+        $('.select_wrap').toggleClass('filter_open');
     });
     $('.auction_detail .tab_list li').on('click', function () {
         var idx = $(this).index();
