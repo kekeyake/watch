@@ -132,10 +132,10 @@
         <section class="product_list">
             <div class="filter_wrap">
                 <div class="select_wrap">
-                    <button class="on" rel="brand">브랜드</button>
+                    <button class="" rel="brand">브랜드</button>
                     <button class="" rel="model">모델</button>
                     <button class="" rel="reference">레퍼런스</button>
-                    <button class="" rel="caseSize">케이스 사이즈</button>
+                    <button class="on" rel="caseSize">케이스 사이즈</button>
                     <button class="" rel="movement">구동방식</button>
                     <button class="" rel="year">구매년도</button>
                     <button class="filter">상세 필터</button>
@@ -147,16 +147,14 @@
                     <button class="" rel="branch">보유지점</button>
                     <button class="" rel="condition">상품컨디션</button>
                 </div>
-                
             </div>
-    
             <div class="sort_wrap">
                 <span>전체 상품 <b>999개</b></span>
                 <select name="" id="" class="filter_select">
                     <option value="">가격 높은 순</option>
                 </select>
             </div>
-            <div class="filter_detail_wrap brand on">
+            <div class="filter_detail_wrap brand">
                 <div class="search_box">
                     <strong>최근 검색 브랜드</strong>
                     <div>
@@ -272,6 +270,115 @@
                     <button class="btn_ok">적용</button>
                 </div>
             </div>
+            <div class="filter_detail_wrap model">
+                <div class="search_box">
+                    <strong>최근 검색 모델명</strong>
+                    <div>
+                        <span>검색 결과가 없습니다.</span>
+                    </div>
+                </div>
+                <div class="all_model">
+                    <strong>전체 모델</strong>
+                    <div>
+                        <div class="search_wrap">
+                            <input type="text" placeholder="목록 검색">
+                            <button><img src="assets/img/common/ico_search2.svg" alt=""></button>
+                        </div>
+                        <ul class="scroll_box">
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>A. Lange & Sohne</span>
+                                </label>
+                                <ul>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>A. Lange & Sohne</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>A. Lange & Sohne</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span>A. Lange & Sohne</span>
+                                </label>
+                                <ul>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>A. Lange & Sohne</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>A. Lange & Sohne</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <span>선택 모델 (0건)</span>
+                </div>
+                <div class="btn_wrap right">
+                    <button class="btn_reset">초기화</button>
+                    <button class="btn_ok">적용</button>
+                </div>
+            </div>
+            <div class="filter_detail_wrap reference">
+                <div class="default_box">
+                    <strong>레퍼런스</strong>
+                    <input type="text" placeholder="레퍼런스를 입력해주세요">
+                </div>
+                <div class="btn_wrap right">
+                    <button class="btn_reset">초기화</button>
+                    <button class="btn_ok">적용</button>
+                </div>
+            </div>
+            <div class="filter_detail_wrap caseSize on">
+                <div class="default_box">
+                    <strong>케이스 사이즈</strong>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>20mm</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>38mm</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>40mm</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>44mm</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn_wrap">
+                    <button class="btn_reset">초기화</button>
+                    <button class="btn_ok">적용</button>
+                </div>
+            </div>
         </section>
     </div>
     <footer>
@@ -318,6 +425,7 @@
         <p class="copy">ⓒ2020 ㈜시간. All Rights Reserved.</p>
     </footer>
 </div>
+
 
 <script type="text/javascript" src="assets/libs/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="assets/libs/swiper.min.js"></script>

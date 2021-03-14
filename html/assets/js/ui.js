@@ -79,11 +79,14 @@ $(function () {
     $('.select_wrap button').on('click',function(){
         $(this).toggleClass('on');
         $(this).siblings('button').not('filter').removeClass('on');
-        
-        var filterXY = $(this).offset();
-        console.log(filterXY);
+        var tg = $(this).attr('rel');
+        $('.filter_detail_wrap').removeClass('on');
+        if ( $(this).hasClass('on') ){
+            $('.filter_detail_wrap.' + tg + '').toggleClass('on');
+        }
         
     });
+    
     $('.keyword_list button').on('click',function(){
         $(this).toggleClass('on').parent('li').siblings('li').find('button').removeClass('on');
     });
@@ -111,6 +114,7 @@ $(function () {
     $('.recently_view > button').on('click',function(){
         $('.recently_viewed_products').toggleClass('on');
     });
+
 });
 
 function chkBrowserSize() {
