@@ -4176,12 +4176,57 @@
     &.reference {
         width: 320px;
         top:84px;
-        left:382px;
+        left:383px;
     }
     &.caseSize {
         width: 200px;
         top:84px;
         left:554px;
+    }
+    &.movement {
+        width: 200px;
+        top:84px;
+        left:725px;
+    }
+    &.year {
+        width: 320px;
+        top:84px;
+        left:896px;
+    }
+    &.components {
+        width: 200px;
+        top:129px;
+        left:40px;
+    }
+    &.gender {
+        width: 200px;
+        top:129px;
+        left:211px;
+    }
+    &.material {
+        width: 200px;
+        top:129px;
+        left:383px;
+    }
+    &.color {
+        width: 200px;
+        top:129px;
+        left:554px;
+    }
+    &.type {
+        width: 200px;
+        top:129px;
+        left:725px;
+    }
+    &.branch {
+        width: 200px;
+        top:129px;
+        left:896px;
+    }
+    &.condition {
+        width: 348px;
+        top:129px;
+        left:829px;
     }
     .btn_wrap {
         display: flex;
