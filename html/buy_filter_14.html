@@ -12,6 +12,7 @@
     <title>시간프로젝트</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link type="text/css" rel="stylesheet" href="assets/libs/swiper.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link type="text/css" rel="stylesheet" href="assets/css/font.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/common.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/layout.min.css" />
@@ -589,26 +590,13 @@
             <div class="filter_detail_wrap condition on">
                 <div class="default_box">
                     <strong>상품컨디션</strong>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="checkbox">
-                                <span>대구</span>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox">
-                                <span>부산</span>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox">
-                                <span>서울</span>
-                            </label>
-                        </li>
-                    </ul>
+                    <div id="slider-range-min">
+                        <span class="start">0점</span>
+                        <span class="end">10점</span>
+                        <div class="ui-slider-handle">
+                            <span id="custom-handle"></span>
+                        </div>
+                    </div>
                 </div>
                 <div class="btn_wrap right">
                     <button class="btn_reset">초기화</button>
@@ -666,6 +654,8 @@
 <script type="text/javascript" src="assets/libs/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="assets/libs/swiper.min.js"></script>
 <script type="text/javascript" src="assets/libs/jquery.easings.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
@@ -676,6 +666,22 @@
             el: '.swiper-pagination',
         },
     });
+
+    var handle = $( "#custom-handle" );
+    $( "#slider-range-min" ).slider({
+        
+        range: "min",
+        value: 4,
+        min: 0,
+        max: 10,
+        create: function() {
+            handle.text( $( this ).slider( "value" ) + "점");
+        },
+        slide: function( event, ui ) {
+            handle.text( ui.value  + "점");
+        }
+    });
+  
 </script>
 </body>
 </html>
