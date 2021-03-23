@@ -59,6 +59,7 @@ button {
   background: transparent;
   cursor: pointer;
   outline: none;
+  border-radius: 1px;
 }
 
 hr {
@@ -126,6 +127,7 @@ a {
     color:#BE9162;
     outline: none;
   }
+  border-radius: 1px;
 }
 
 input[type="checkbox"] {
@@ -258,6 +260,29 @@ footer {
   color:#fff;
   font-size: 13px;
   font-weight: 500;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    width: 200%;
+    height: 248px;
+    background: #212529;
+    position: absolute;
+    top:0;
+    left: -100%;
+    z-index: -1;
+  }
+  &::before {
+    content: '';
+    display: block;
+    width: 200%;
+    height: 248px;
+    background: #212529;
+    position: absolute;
+    top:0;
+    right:-100%;
+    z-index: -1;
+  }
   a:hover {
     color:#fff;
   }
@@ -366,7 +391,7 @@ footer {
 }
 .popup {
   width:440px;
-  padding:28px;
+  padding:28px 30px 30px;
   position: absolute;
   left:50%;
   top:50%;
@@ -420,6 +445,7 @@ footer {
       border: 1px solid rgba(49,56,63,1);
       font-size: 16px;
       margin-left: 8px;
+      border-radius: 1px;;
       &.ok {
         background-color: rgba(49,56,63,1);
         color:#fff;
@@ -428,6 +454,7 @@ footer {
         width: 100%;
         background-color: rgba(49,56,63,1);
         color:#fff;
+        margin-left: 0;
       }
     }
     &.right {

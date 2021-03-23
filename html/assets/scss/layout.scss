@@ -488,6 +488,7 @@
         margin-top: 8px;
         font-size: 14px;
         opacity: .75;
+        line-height: 1.6;
         color:rgba(52,58,64,1);
     }
     label {
@@ -848,7 +849,7 @@
         .info_editor {
             display: flex;
             padding:30px 0 40px;
-            border-bottom:1px solid #A1ACB7;
+            border-bottom:1px solid #CBCDCF;
             h3 {
                 width: 275px;
                 font-size: 20px;
@@ -882,6 +883,9 @@
                 &::placeholder {
                     color:rgba(49,56,63,.5);
                 }
+            }
+            & + .error_txt {
+                margin-top: 16px;
             }
             .profile_img {
                 margin-top: 28px;
@@ -1106,7 +1110,7 @@
             }
             & + .btn_wrap {
                 padding-top: 28px;
-                border-top: 1px solid #A1ACB7;
+                border-top: 1px solid #C7CDD2;
             }
         }
     }
@@ -1752,10 +1756,11 @@
                 }
                 .fluctuations {
                     margin-top: 20px;
-                    display: flex;
+                    display: inline-flex;
+                    padding:0 7px;
                     justify-content: center;
                     align-items: center;
-                    width: 36px;height: 24px;
+                    width: auto;min-width: 36px; height: 24px;
                     border-radius: 2px;
                     background: #A1ACB7;
                     font-weight: 500;
@@ -1831,7 +1836,7 @@
                 border-bottom: 1px solid rgba(161, 172, 183, .35);
                 border-right: 1px solid rgba(161, 172, 183, .35);
                 &.filter_open {
-                    height: 90px;
+                    height: 89px;
                     button.filter {
                         color:#fff;
                         background: #31383F url(../img/common/ico_filter_on.svg) no-repeat 44px 50%;
@@ -2290,6 +2295,7 @@
             top:37px;
             width: 1128px;
             height: 81px;
+            padding-top: 12px;
         }
     }
     h3 {
@@ -2415,12 +2421,12 @@
         }
         .agree_box {
             position: relative;
-            margin-top: 20px;
+            margin-top: 16px;
             padding-left: 28px;
             input {
                 position: absolute;
                 left:0;
-                top:7px;
+                top:3px;
             }
             span {
                 font-weight: 500;
@@ -2430,6 +2436,7 @@
                 }
             }
             p {
+                margin-top: 4px;
                 font-weight: 500;
                 font-size: 12px;
                 line-height: 1.55;
@@ -2941,7 +2948,7 @@
             }
             .attach_file {
                 position: relative;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
                 input[type="file"] {
                     position: absolute; 
                     width: 1px; 
@@ -3207,7 +3214,28 @@
         width: 1280px;
         margin:0 auto;
         padding:52px 40px 56px;
+        position: relative;
         background: #EDF0F3;
+        &::before {
+            content: '';
+            display: block;
+            width: 200%;
+            height: 440px;
+            background: #EDF0F3;
+            position: absolute;
+            top:0;
+            left: -100%;
+        }
+        &::after {
+            content: '';
+            width: 200%;
+            height: 440px;
+            display: block;
+            background: #EDF0F3;
+            position: absolute;
+            top:0;
+            right:-100%;
+        }
         h2 {
             font-weight: bold;
             font-size: 24px;
@@ -3285,11 +3313,11 @@
                 }
                 .fluctuations {
                     margin-top: 20px;
-                    padding:0 7px;
                     display: inline-flex;
+                    padding:0 7px;
                     justify-content: center;
                     align-items: center;
-                    min-width: 36px;height: 24px;
+                    width: auto;min-width: 36px; height: 24px;
                     border-radius: 2px;
                     background: #A1ACB7;
                     font-weight: 500;
@@ -3403,20 +3431,45 @@
                 border-radius: 1px;
             }
             .select_wrap {
+                overflow: hidden;
+                width: 100%;
+                height: 45px;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                border-bottom: 1px solid rgba(161,172,183,0.35);
+                border-right: 1px solid rgba(161,172,183,0.35);                
+                &.filter_open {
+                    height: 90px;
+                    button.filter {
+                        color:#fff;
+                        background: #31383F url(../img/common/ico_filter_on.svg) no-repeat 44px 50%;
+                    }
+                }
                 button {
-                    background: url(../img/common/ico_arrow_down.svg) no-repeat right 14px top 50%;
-                    height: 40px;
-                    margin-right: 10px;
-                    padding:0 40px 0 14px;
-                    border: 1px solid rgba(161, 172, 183, .35);
+                    width: calc(100% / 7);
+                    height: 44px;
+                    padding: 0;
+                    border: 1px solid rgba(161,172,183,0.35);
+                    border-bottom: 0 solid #000;
+                    border-right: 0 solid #000;
                     border-radius: 1px;
                     font-weight: 500;
                     font-size: 14px;
+                    
                     &.on {
                         color:#fff;
                         border-color: #31383F;
                         background:#31383F url(../img/common/ico_arrow_down_on.svg) no-repeat right 14px top 50%;
+                    }
+                    &.filter {
+                        padding-left: 25px;
+                        background: #F5F7FA url(../img/common/ico_filter.svg) no-repeat 44px 50%;
+                        &.on {
+                            background: #31383F url(../img/common/ico_filter_on.svg) no-repeat 44px 50%;
+                        }
                     }
                 }
             }
@@ -4000,7 +4053,7 @@
     .recently_viewed_products {
         position: relative;
         width: 340px;
-        height: 368px;
+        height: 362px;
         padding:18px 16px 12px;
         background: #FFF;
         border: 1px solid #EDF0F3;
@@ -4255,6 +4308,7 @@
         }
         .ui-widget-content {
             background: rgba(170, 180, 196, 0.2);
+            border: 0 solid #000;
             border-radius: 100px;
         }
         .ui-slider-horizontal {
@@ -4344,7 +4398,7 @@
             flex-wrap: wrap;
             li {
                 margin-right:20px;
-                margin-bottom: 10px;
+                margin-bottom: 24px;
             }
         }
         strong {
@@ -4355,9 +4409,15 @@
             line-height: 16px;
             color: #31383F;
         }
+        label {
+            display: flex;
+            align-items: center;
+        }
         label span {
             font-size: 14px;
             color: #121212;
+            margin-left: 8px;
+            width: 120px;
         }
         & > span {
             display: block;
@@ -4401,19 +4461,25 @@
             }
         }
         .scroll_box {
-            height:220px;
+            max-height:220px;
             overflow-y: auto;
             margin-bottom: 20px;            
         }
         ul {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: wrap;            
             li {
                 margin-right:20px;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 ul {
-                    margin-left: 14px;
+                    margin-left: 12px;
                     margin-top: 10px;
+                    li {
+                        margin-bottom: 12px;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
                 }
             }
         }
@@ -4425,9 +4491,14 @@
             line-height: 16px;
             color: #31383F;
         }
+        label {
+            display: flex;
+            align-items: center;
+        }
         label span {
             font-size: 14px;
             color: #121212;
+            margin-left: 8px;
         }
         & > span {
             display: block;
