@@ -397,6 +397,7 @@
 
 .shop .shop_info .info_top .intro_box p {
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .shop .shop_info .info_top .intro_box p:last-child {
@@ -3149,7 +3150,7 @@ p + label span {
 
 .popup.reservation .cont {
   margin-top: 14px;
-  border-top: 1px solid rgba(49, 56, 63, 0.5);
+  border-top: 1px solid #CBCDCF;
   padding-top: 20px;
 }
 
@@ -4410,6 +4411,8 @@ p + label span {
   line-height: 28px;
   text-align: center;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .auction .most_viewed .swiper-container {
@@ -5748,43 +5751,43 @@ p + label span {
 
 .filter_detail_wrap.components {
   width: 200px;
-  top: 129px;
+  top: 128px;
   left: 40px;
 }
 
 .filter_detail_wrap.gender {
   width: 200px;
-  top: 129px;
+  top: 128px;
   left: 211px;
 }
 
 .filter_detail_wrap.material {
   width: 200px;
-  top: 129px;
+  top: 128px;
   left: 383px;
 }
 
 .filter_detail_wrap.color {
   width: 200px;
-  top: 129px;
+  top: 128px;
   left: 554px;
 }
 
 .filter_detail_wrap.type {
   width: 200px;
-  top: 129px;
+  top: 128px;
   left: 725px;
 }
 
 .filter_detail_wrap.branch {
   width: 200px;
-  top: 129px;
+  top: 128px;
   left: 896px;
 }
 
 .filter_detail_wrap.condition {
   width: 348px;
-  top: 129px;
+  top: 128px;
   left: 1068px;
 }
 
