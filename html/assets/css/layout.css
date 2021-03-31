@@ -12,9 +12,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -34,6 +31,63 @@
   margin-top: 10px;
   font-size: 16px;
   font-weight: 500;
+}
+
+.intro {
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 48px;
+  background: url(../img/common/mobile_bg.png) no-repeat 0 0/cover;
+}
+
+.intro .t1 {
+  font-size: 6.667vw;
+  font-weight: 500;
+  margin-top: 28px;
+  color: #2B2F32;
+}
+
+.intro .t2 {
+  font-size: 7.778vw;
+  font-weight: 500;
+  margin-top: 8px;
+  color: #2B2F32;
+}
+
+.intro .t2 b {
+  font-weight: 700;
+}
+
+.intro .t3 {
+  width: 90vw;
+  text-align: center;
+  background: #31383F;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 6.286vw;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 24px 0;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.intro .logo img {
+  width: 34.444vw;
 }
 
 .info {
