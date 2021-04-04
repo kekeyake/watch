@@ -2727,7 +2727,7 @@ p + label span {
 .buy .product_list .pro_list > li {
   position: relative;
   width: calc(100% / 4);
-  padding: 24px 0 28px;
+  padding: 0 0 28px;
   border: 1px solid #EDF0F3;
   border-top: 0 solid #000;
   border-right: 0 solid #000;
